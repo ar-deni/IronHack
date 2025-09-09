@@ -1,0 +1,271 @@
+/* Basic styling for the artist collection website */
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Artist Index List styling */
+.artist-index {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.artist-index h1 {
+    margin: 0 0 15px 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+/* Artist index list with margin and padding examples */
+.artist-index ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Gap property example */
+}
+
+.artist-index li {
+    margin: 5px; /* Margin example */
+}
+
+.artist-index a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Padding example */
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.artist-index a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Main container styling */
+.artists-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px; /* Padding example */
+}
+
+/* Artist section styling with margin examples */
+.artist-section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px; /* Padding example */
+    margin-bottom: 30px; /* Margin example */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e1e5eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0.12);
+}
+
+.artist-section h2 {
+    color: #2575fc;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #6a11cb;
+    font-size: 1.8em;
+}
+
+/* Artist bio styling */
+.artist-bio h3 {
+    color: #6a11cb;
+    margin: 20px 0 10px 0;
+}
+
+.artist-bio h4 {
+    color: #2575fc;
+    margin: 15px 0 5px 0;
+}
+
+/* Text formatting with different padding values */
+.bio-text {
+    line-height: 1.8;
+    text-align: justify;
+    padding: 15px; /* Padding example */
+    background-color: #f8f9ff;
+    border-radius: 8px;
+    border-left: 4px solid #6a11cb;
+}
+
+.early-life {
+    line-height: 1.4;
+    text-align: justify;
+    padding: 10px; /* Different padding value */
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    border-left: 4px solid #2575fc;
+}
+
+.career {
+    line-height: 2.0;
+    text-align: left;
+    padding: 20px; /* Different padding value */
+    background-color: #fff8f0;
+    border-radius: 8px;
+    border-left: 4px solid #ff6b35;
+}
+
+/* First line styling */
+.bio-text::first-line {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #6a11cb;
+}
+
+/* Genre styling */
+.genre {
+    font-weight: bold;
+    color: #555;
+    font-size: 1.1em;
+    padding: 5px 10px; /* Padding example */
+    background-color: #eef2f7;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Albums section styling */
+.artist-albums h3 {
+    color: #6a11cb;
+    margin: 25px 0 15px 0;
+}
+
+/* Album container with gap property */
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap property example */
+    margin-top: 15px;
+}
+
+/* Individual album styling with padding and margin */
+.album {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px; /* Padding example */
+    margin: 5px; /* Margin example */
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.album:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.album-title {
+    letter-spacing: 1px;
+    color: #2575fc;
+    margin: 0 0 10px 0;
+}
+
+.album-year {
+    font-style: italic;
+    color: #666;
+}
+
+/* Tours section styling */
+.artist-tours h3 {
+    color: #6a11cb;
+    margin: 25px 0 15px 0;
+}
+
+/* Tour container with gap property */
+.tour-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Gap property example */
+    margin-top: 15px;
+}
+
+/* Individual tour date styling with padding and margin */
+.tour-date {
+    flex: 1;
+    min-width: 250px;
+    padding: 25px; /* Padding example */
+    margin: 8px; /* Margin example */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(37, 117, 252, 0.3);
+}
+
+.tour-date .date {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.tour-date .venue {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .artist-index ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .album-container,
+    .tour-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .album,
+    .tour-date {
+        min-width: auto;
+    }
+    
+    .artist-index {
+        padding: 15px;
+    }
+    
+    .artist-index h1 {
+        font-size: 1.8em;
+    }
+    
+    .artists-container {
+        padding: 0 10px 20px 10px;
+    }
+    
+    .artist-section {
+        padding: 20px;
+    }
+}
