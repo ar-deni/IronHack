@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music News Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling with solid blue border */
+        header {
+            border: 3px solid blue;
+            padding: 20px;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+
+        /* Navigation styling with dotted green border */
+        nav {
+            border: 2px dotted green;
+            background-color: #e0ffe0;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: green;
+        }
+
+        /* Main content styling with double black border */
+        main {
+            border: 3px double black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* Section styling with dashed red border */
+        section {
+            border: 2px dashed red;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        /* Article styling with solid gray border */
+        article {
+            border: 1px solid gray;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Aside styling with dotted purple border */
+        aside {
+            border: 2px dotted purple;
+            padding: 15px;
+            background-color: #f0e0ff;
+            margin: 20px 0;
+        }
+
+        /* Footer styling with solid orange border */
+        footer {
+            border: 3px solid orange;
+            padding: 20px;
+            background-color: #fff0e0;
+            text-align: center;
+        }
+
+        /* Go to index link styling */
+        .go-to-index {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .go-to-index a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Highlight span styling */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with site title -->
+    <header id="top">
+        <h1>Music News Portal</h1>
+        <p>Your source for the latest music news and updates</p>
+    </header>
+
+    <!-- Navigation menu with anchor links -->
+    <nav>
+        <ul>
+            <li><a href="#top-news">Top News</a></li>
+            <li><a href="#concert-reviews">Concert Reviews</a></li>
+            <li><a href="#album-releases">Album Releases</a></li>
+            <li><a href="#artist-interviews">Artist Interviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Top News Section -->
+        <section id="top-news">
+            <h2>Top News</h2>
+            
+            <article>
+                <h3>New Music Festival Announced</h3>
+                <p>The <span class="highlight">Annual Summer Music Festival</span> will return this year with an exciting lineup of international artists. The event is scheduled for July 15-17 and will feature performances across multiple genres.</p>
+                <p>Tickets go on sale next Monday, with early bird discounts available for a limited time.</p>
+                <a href="#top" class="go-to-index">Go to Index</a>
+            </article>
+            
+            <article>
+                <h3>Industry Awards Nominations Released</h3>
+                <p>The nominations for this year's <span class="highlight">Music Industry Awards</span> have been announced. The ceremony will take place next month at the downtown convention center.</p>
+                <p>Fans can vote for their favorite artists in several categories through the official website.</p>
+                <a href="#top" class="go-to-index">Go to Index</a>
+            </article>
+            
+            <a href="#top" class="go-to-index">Go to Index</a>
+        </section>
+
+        <!-- Concert Reviews Section -->
+        <section id="concert-reviews">
+            <h2>Concert Reviews</h2>
+            
+            <article>
+                <h3>Rock Band's Homecoming Show</h3>
+                <p>Last night's concert by <span class="highlight">The Thunder Riders</span> at the city arena was an incredible display of musicianship and stage presence. The band performed both classic hits and tracks from their latest album.</p>
+                <p>The energy in the venue was electric throughout the entire show, with fans singing along to every song.</p>
+                <a href="#top" class="go-to-index">Go to Index</a>
+            </article>
+            
+            <article>
+                <h3>Jazz Ensemble's Intimate Performance</h3>
+                <p>The <span class="highlight">Moonlight Jazz Quartet</span> delivered a mesmerizing performance at the historic Blue Note club last weekend. Their blend of traditional and contemporary jazz styles captivated the audience.</p>
+                <p>Their upcoming album recording sessions are expected to begin next month.</p>
+                <a href="#top" class="go-to-index">Go to Index</a>
+            </article>
+            
+            <a href="#top" class="go-to-index">Go to Index</a>
+        </section>
+
+        <!-- Album Releases Section -->
+        <section id="album-releases">
+            <h2>Album Releases</h2>
+            
+            <article>
+                <h3>Pop Star's Anticipated Album</h3>
+                <p><span class="highlight">Taylor Rivers</span> has released her highly anticipated fifth studio album "Midnight Reflections". The album features 12 new tracks and has already topped the charts in several countries.</p>
+                <p>Critics are praising the album's introspective lyrics and innovative production.</p>
+                <a href="#top" class="go-to-index">Go to Index</a>
+            </article>
+            
+            <!-- Table with singer albums and years (extra) -->
+            <h3>Album Discography</h3>
+            <table>
+                <tr>
+                    <th>Album Title</th>
+                    <th>Release Year</th>
+                </tr>
+                <tr>
+                    <td>First Impressions</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>City Lights</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Ocean Breeze</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>Neon Dreams</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Midnight Reflections</td>
+                    <td>2023</td>
+                </tr>
+            </table>
+            
+            <a href="#top" class="go-to-index">Go to Index</a>
+        </section>
+
+        <!-- Artist Interviews Section -->
+        <section id="artist-interviews">
+            <h2>Artist Interviews</h2>
+            
+            <article>
+                <h3>Exclusive Interview with Indie Band</h3>
+                <p>We sat down with <span class="highlight">The Forest Echoes</span> to discuss their creative process and upcoming tour. The band shared insights into their songwriting approach and the stories behind their latest EP.</p>
+                <p>Lead vocalist Sarah mentions that their new music is inspired by nature and personal experiences during the pandemic.</p>
+                <a href="#top" class="go-to-index">Go to Index</a>
+            </article>
+            
+            <article>
+                <h3>Behind the Scenes with Electronic Artist</h3>
+                <p>In our latest interview, <span class="highlight">DJ Pulse</span> talks about the evolution of electronic music and his journey from underground clubs to international festivals.</p>
+                <p>He also previews his upcoming collaboration with several international artists.</p>
+                <a href="#top" class="go-to-index">Go to Index</a>
+            </article>
+            
+            <a href="#top" class="go-to-index">Go to Index</a>
+        </section>
+
+        <!-- Aside with additional information -->
+        <aside>
+            <h3>Upcoming Events</h3>
+            <p>Don't miss these exciting music events:</p>
+            <ul>
+                <li>June 10 - Classical Symphony Opening Night</li>
+                <li>June 18 - Indie Rock Showcase</li>
+                <li>June 25 - Hip-Hop Battle of the Bands</li>
+            </ul>
+            <p>Follow us on social media for real-time updates!</p>
+        </aside>
+    </main>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2023 Music News Portal. All rights reserved.</p>
+        <p>Contact us at info@musicnews.com</p>
+    </footer>
+</body>
+</html>
