@@ -1,0 +1,110 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Bomb container styling */
+.bomb-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bomb-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bomb-container p {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Bomb grid */
+.bomb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+/* Base bomb styling */
+.exploding-bomb, .safe-bomb {
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Exploding bomb styling */
+.exploding-bomb {
+  background-image: url('images/bomb.png');
+}
+
+/* Safe bomb styling */
+.safe-bomb {
+  background-image: url('images/bomb.png'); /* Initially shows bomb image like others */
+}
+
+/* Hover effects for exploding bombs */
+.exploding-bomb:hover {
+  background-image: url('images/explosion.png');
+  transform: scale(1.1) rotate(5deg);
+  cursor: pointer;
+}
+
+/* Safe bomb hover effect - no explosion */
+.safe-bomb:hover {
+  background-image: url('images/safe-item.png'); /* Changes to safe item on hover */
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .bomb-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .exploding-bomb, .safe-bomb {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .extinguisher-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bomb-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .exploding-bomb, .safe-bomb {
+    width: 160px;
+    height: 160px;
+  }
+  
+  body {
+    padding: 10px;
+  }
+}
